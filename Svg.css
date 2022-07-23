@@ -1,0 +1,44 @@
+body {
+  font-family: Monospace;
+  text-align:center;
+  user-select: none;
+}
+.cursive {
+  color: #ffaa34;
+  background-color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.top,.middle,.bottom{
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  border-color: green;
+  vertical-align: top;
+}
+span,input {
+  font-size: 16px;
+  color: yellow;
+  background-color: black;
+  padding: 6px;
+}
+
+button{
+  margin:auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: yellow;
+  color: black;
+  font-size: 20px;
+  border-radius:5px;
+}
+button:hover{
+  background-color: black;
+  color: yellow;
+  font-size: 20px;
+  transform: 0.5s ;
+}
+/*button:active{
+  background-color: white;
+  color:#a77ff0;
+}*/
