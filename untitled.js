@@ -4,6 +4,13 @@ let percent = 10;
 let sell = cost*(100+percent)/100;
 console.log(sell);
 */
+function calc(){
+let a = document.getElementById("vumi").value;
+let b = document.getElementById("lombo").value;
+let c = (a*a+b*b);
+let d = Math.sqrt(c);
+document.getElementById("result").innerHTML ="তুমার অতিভুজ হলোঃ "+d;
+}
 //------------
 function percent(){
 let sell = document.getElementById("sell").value;
