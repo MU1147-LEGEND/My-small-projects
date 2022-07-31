@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>Small apps By JS</title>
   <link rel="stylesheet" href="Svg.css" />
 </head>
+
 <body>
-  <form>
-<span>ভুমিঃ</span>
-<input type="number" id = "vumi"placeholder="এখানে ভুমির মান বসাও"/>
-<p></p>
-<span>লম্বঃ</span>
-<input type="number" id = "lombo"placeholder="এখানে লম্বের মান বসাও"/>
-</form>
-<p id = "result">অতিভুজ</p>
-<button onclick="calc()">Claculate</button>
+
+  <!--Project NO.1-->
+  <div class="project1">
+    <p class="projectName">NO.1 অতিভুজ ক্যালকুলেটর</p>
+    <form>
+      <span>ভুমিঃ</span>
+      <input type="number" id="vumi" placeholder="এখানে ভুমির মান বসাও" />
+      <br /><br />
+      <span>লম্বঃ</span>
+      <input type="number" id="lombo" placeholder="এখানে লম্বের মান বসাও" />
+    </form>
+    <br />
+    <span id="otivuj">অতিভুজ</span>
+    <br />
+    <button onclick="calc()">Claculate</button>
+  </div>
+
+  <!--Another Project / Project NO.2-->
   
-  <div>--------</div>
-  <span>Cost Price:</span>
-  <input type="number" name="cost" id="cost" value="" placeholder="type costing price here"/> <br/><br/>
-  <span>Sell Price:</span> <input type="number" name="sell" id="sell" value="" placeholder="type selling price here"/>
-  <br/><br/><br/>
-  <span id="percent">Profit Amount</span>
-  <br/><br/><br/>
-  <button onclick="percent()" type="submit" id="submit">Calculate%</button>
-  <br/>
-  <button onclick = "kill()">CLEAR</button>
-  <button onclick="killAll()">CLEAR ALL</button>
-  
-<script src= "untitled.js">
-</script>
+  <div class="project2">
+    <p class="projectName">NO.2 লাভ/ক্ষতি ক্যালকুলেটর</p>
+    <form>
+      <span>Cost Price:</span>
+      <input type="number" name="cost" id="cost" value="" placeholder="ক্রয়মূল্য বসাও" />
+      <br /><br />
+      <span>Sell Price:</span>
+      <input type="number" name="sell" id="sell" value="" placeholder="বিক্রয়মূল্য বসাও" />
+      <br /><br />
+      <span id="percent">লাভ/ক্ষতির হার</span>
+    </form>
+    <br /><br />
+    <button onclick="percent()" type="submit" id="submit">Calculate%</button>
+    <br />
+  </div>
+
+  <button class="clearAll" onclick="killAll()">CLEAR ALL</button>
+  <script src="untitled.js">
+  </script>
 </body>
+
 </html>

@@ -1,44 +1,88 @@
 body {
   font-family: Monospace;
-  text-align:center;
+  text-align: center;
   user-select: none;
 }
+
 .cursive {
   color: #ffaa34;
   background-color: white;
   font-size: 30px;
   text-align: center;
 }
-.top,.middle,.bottom{
+
+.top,
+.middle,
+.bottom {
   color: white;
   background-color: black;
   font-weight: bold;
   border-color: green;
   vertical-align: top;
 }
-span,input {
+
+span,
+input {
   font-size: 16px;
   color: yellow;
   background-color: black;
   padding: 6px;
 }
 
-button{
-  margin:auto;
+button {
+  margin: auto;
   margin-top: 25px;
   margin-bottom: 25px;
   background-color: yellow;
   color: black;
   font-size: 20px;
-  border-radius:5px;
+  border-radius: 5px;
 }
-button:hover{
+
+button:hover {
   background-color: black;
   color: yellow;
   font-size: 20px;
-  transform: 0.5s ;
+  transform: 0.5s;
 }
-/*button:active{
+
+button:active {
   background-color: white;
-  color:#a77ff0;
-}*/
+  color: #a77ff0;
+}
+
+.clearAll {
+  width: 50%;
+  height: 40px;
+}
+
+.project1,
+.project2 {
+  max-width: 600px;
+  margin: 4px auto;
+  margin-top: 40px;
+  border: 3px solid rgb(12, 231, 147);
+  border-radius: 15px;
+  display: block;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.project1:hover,
+.project2:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.03);
+}
+.project1:active,
+.project2:active{
+  box-shadow: 0 4px 8px 0 rgba(255, 18, 18, 0.2), 0 6px 20px 0 rgba(25, 0, 255, 0.19);
+}
+
+.projectName {
+  border: 3px solid rgb(255, 6, 255);
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  max-width: 100px;
+  max-height: 90px;
+  display: inline-block;
+}
