@@ -78,11 +78,20 @@ function killAll() {
   document.getElementById("sell").value = "";
   document.getElementById("vumi").value = "";
   document.getElementById("lombo").value = "";
+  document.getElementById("fact").value = "";
   document.getElementById("primeValue").value = "";
   document.getElementById("otivuj").innerHTML = "অতিভুজ";
   document.getElementById("prime").innerHTML = "Is Prime or Not";
   document.getElementById("factShow").innerHTML = "Factorial value:";
   document.getElementById("percent").innerHTML = "লাভ/ক্ষতির হার";
+}
+
+//changing theme---
+function changeTheme() {
+  document.body.style.backgroundColor = 'black';
+}
+function changeThemeDay() {
+  document.body.style.backgroundColor = 'white';
 }
 
 //turning off inspect element
