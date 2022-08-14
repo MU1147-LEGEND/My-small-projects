@@ -57,7 +57,8 @@ button:active {
 }
 
 .project1,
-.project2 {
+.project2,
+.project3 {
   max-width: 600px;
   margin: 4px auto;
   margin-top: 40px;
@@ -69,12 +70,14 @@ button:active {
 }
 
 .project1:hover,
-.project2:hover {
+.project2:hover,
+.project3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.03);
 }
 .project1:active,
-.project2:active{
+.project2:active,
+.project3.active{
   box-shadow: 0 4px 8px 0 rgba(255, 18, 18, 0.2), 0 6px 20px 0 rgba(25, 0, 255, 0.19);
 }
 

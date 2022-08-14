@@ -18,21 +18,66 @@ function percent() {
   let cost = document.getElementById("cost").value;
   let profit = (sell - cost) / cost * 100;
   let limitProfit = profit.toFixed(3);
-  document.getElementById('percent').innerHTML = ("এই পণ্যে তোমার লাভ/ক্ষতি হচ্ছেঃ "+
+  document.getElementById('percent').innerHTML = ("এই পণ্যে তোমার লাভ/ক্ষতি হচ্ছেঃ " +
     limitProfit + "%");
 }
 
+function isPrime() {
+  let val = document.getElementById("primeValue").value;
+  let num = Number(val);
+  if (num === 1) {  
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+    }
+  else if (num % 2 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 3 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 5 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 7 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 9 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 11 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 13 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 19 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 23 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else if (num % 31 === 0) {
+    document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
+  }
+  else {
+    document.getElementById("prime").innerHTML = `${num} is a Prime Number`;
+  }
+  }
+
+
+//clear All Function---
 function killAll() {
   document.getElementById("cost").value = "";
   document.getElementById("sell").value = "";
   document.getElementById("vumi").value = "";
   document.getElementById("lombo").value = "";
+  document.getElementById("primeValue").value = "";
   document.getElementById("otivuj").innerHTML = "অতিভুজ";
+  document.getElementById("prime").innerHTML = "Is Prime or Not";
   document.getElementById("percent").innerHTML = "লাভ/ক্ষতির হার";
 }
 
-
-document.addEventListener('contextmenu', function(e) {
+//turning off inspect element
+document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
 });
 document.onkeydown = function (e) {
