@@ -25,9 +25,9 @@ function percent() {
 function isPrime() {
   let val = document.getElementById("primeValue").value;
   let num = Number(val);
-  if (num === 1) {  
+  if (num === 1) {
     document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
-    }
+  }
   else if (num % 2 === 0) {
     document.getElementById("prime").innerHTML = `${num} is not a Prime Number`;
   }
@@ -61,8 +61,16 @@ function isPrime() {
   else {
     document.getElementById("prime").innerHTML = `${num} is a Prime Number`;
   }
-  }
+}
 
+function factorial() {
+  let countFact = 1;
+  let factNum = document.getElementById("fact").value;
+  for (let i = 1; i <= factNum; i++) {
+    countFact *= i;
+  }
+  document.getElementById("factShow").innerHTML = `Factorial of ${factNum} is: ${countFact}`;
+}
 
 //clear All Function---
 function killAll() {
@@ -73,6 +81,7 @@ function killAll() {
   document.getElementById("primeValue").value = "";
   document.getElementById("otivuj").innerHTML = "অতিভুজ";
   document.getElementById("prime").innerHTML = "Is Prime or Not";
+  document.getElementById("factShow").innerHTML = "Factorial value:";
   document.getElementById("percent").innerHTML = "লাভ/ক্ষতির হার";
 }
 
