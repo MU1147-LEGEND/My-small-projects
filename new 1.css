@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("All-Google-Fonts/Caveat/Caveat-VariableFont_wght.woff2") format(woff2);
+}
+
+*{
+margin:0px;
+padding:0px;
+}
+
+body{ 
+	padding: 20px;
+    font-family: Caveat;
+    line-height: 1.5rem;
+	background-color:#eee;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+header{
+	width:100%;
+    text-align:center;
+}
+
+header h1{
+    margin: 10px;
+    padding: 12px;
+    font-family: Audiowide, sans-serif;
+}
+	
+.laptop{
+	width:100%;
+	height:100vh;
+}
+
+footer{
+	background-color: #3f3d5a;
+    padding: 10px 0px;
+    margin: inherit;
+    text-align: center;
+    color: aqua;
+	font-family: "Dancing Script",sans-serif;
+}
+
+footer a{
+    color: aqua;
+	display :inline-block;
+}
+footer p{
+    color: aqua;
+	display :inline-block;
+}
+
+.defaultWidth{
+max-width:1170px;
+margin:auto;
+}
+
+nav{
+	background: #c6d0ff;
+    overflow: hidden;
+	width:100%;
+	height:80px;
+}
+
+nav img{
+    float: left;
+    width: 50px;
+    padding: 4px 16px;
+	
+}
+
+nav ul{
+	margin-top:20px;
+	margin-right:20px;
+    display: flex;
+    list-style-type: none;
+    float: right;
+    max-width: 800px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+	padding:4px;
+	border-bottom:2px solid transparent;
+	transition:all 0.5s ease-in;
+	-webkit-transition: all 0.5s cubic-bezier(0.82, 0.76, 1, 1);
+}
+
+nav ul li a{
+	text-transform:uppercase;
+    padding: 8px;
+    margin: auto;
+    font-size: 14px;
+	color:black;
+	font-family:verdana;
+	
+}
+
+nav ul li:hover{
+	background: #61a7ff;
+	border-bottom:2px solid #db26c5;
+	
+}
+
+summary {
+    cursor: pointer;
+    color: #8d8d8d;
+}
+
+button{
+	background: #61a7ff;
+	border-bottom:2px solid #db26c5;
+	padding:4px;
+	transition:all 0.5s ease-in;
+	-webkit-transition: all 0.5s cubic-bezier(0.82, 0.76, 1, 1);
+	cursor:pointer;
+}
+
+p,textarea{
+	margin:10px 0px ;
+	padding:8px;
+	color:black;
+	text-align:justify;
+	background: #ddd;
+	border: 1px solid black;
+	outline: 1px solid orange;
+	text-transform:capitalize;
+	text-indent:20px;
+	letter-spacing:1px;
+	word-spacing:2px;
+	white-space:normal;
+	text-shadow:3px 3px 2px gray; /*x,y,blur,color*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile responsive codes*/
+
+@media only screen and (max-width:500px) {
+  body {
+    width: 85%;
+	margin:auto;
+}
+
+  nav{display:none;}
+  .laptop{width:100%;height:auto; }
+}
+
+.picture src,img{
+	width:100%;
+}
+
+/*Mobile responsive codes*/
+
+@media only screen and (max-width:915px) {
+	.media{
+		display:none;
+	}
+}
