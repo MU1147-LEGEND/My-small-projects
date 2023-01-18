@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        #incpass {
+            display: none;
+            color:tomato;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="login.html" onsubmit="return validateForm()" method="post">
+        <p id="incpass">incorrect password!</p>
+        Email: <br> <input type="text" id="email" name="email"><br>
+        Password: <br> <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            // Validate credentials
+            // Replace with your own validation code
+            if (email == "admin" && password == "admin") {
+                // Redirect to home page
+                window.location.href = '/index.html';
+            } else {
+                document.getElementById("incpass").style.display = "block";
+            }
+
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
