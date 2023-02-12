@@ -75,7 +75,8 @@ footer p {
 }
 
 .navigation {
-  position: -webkit-sticky; /*mozilla*/
+  position: -webkit-sticky;
+  /*mozilla*/
   position: sticky;
   top: 0;
   z-index: 1;
@@ -201,19 +202,32 @@ th {
   overflow-x: auto;
 }
 
-.floatLeft{
-  padding-right:10px;
+.floatLeft {
+  padding-right: 10px;
   width: 70px;
   float: left;
 }
 
+
+/*css for inline-block navigation*/
+.ul ul{
+  background-color: #188f9e;
+}
 .ul ul li{
-  float: left;
-  list-style-type: none;
-  padding: 12px 12px;
+display: inline-block;
+padding: 12px 16px;
 }
 
+.ul ul li:hover{
+  background-color: #000000;
+  cursor:pointer;
+}
 
+.ul ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/*css for inline-block navigation*/
 
 
 

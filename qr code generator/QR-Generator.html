@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <title>QR Code Generator</title>
+    <style>
+        #clearBtn {
+  display: none;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <form action="" method="get" id="qr-form">
+    <label for="qr-input">Give any input link or plain text</label> <br/><br/>
+    <input type="text" id="qr-input"/>
+    <button id="clearBtn">&times;</button>
+    <input type="submit"/>
+</form>
+
+<img src="#" id="qr-output"/>
+    <script src="./qr.js"> </script>
+</body>
+</html>
