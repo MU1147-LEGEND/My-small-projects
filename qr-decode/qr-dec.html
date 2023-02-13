@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script src="./jsqr.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/cozmo/jsQR@latest/dist/jsQR.js"></script>
+    <script>
+        window.onload = function () {
+            onLibraryLoad();
+        }
+
+        function onLibraryLoad() {
+            const qrImageInput = document.getElementById('qrimage');
+            const decodeButton = document.getElementById('decode');
+            const output = document.getElementById('output');
+
+            function readQRImage(e) {
+                const input = document.getElementById('qrimage');
+                const reader = new FileReader();
+                reader.onload = function () {
+                    const image = new Image();
+                    image.src = reader.result;
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    context.drawImage(image, 0, 0);
+                    const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                    const decoded = jsQR(imageData.data, imageData.width, imageData.height);
+                    if (decoded) {
+                        output.innerHTML = decoded.data;
+                    } else {
+                        output.innerHTML = "Sorry, QR code not found.";
+                    }
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+
+
+            qrImageInput.addEventListener('change', readQRImage);
+            decodeButton.addEventListener('click', readQRImage);
+        }
+    </script>
+
+
+    <style>
+        .output {
+            display: inline-block;
+            padding: 20px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="file" id="qrimage" accept="image/png, image/jpeg">
+    <button id="decode">Decode QR Code</button>
+    <div class="output" id="output"></div>
+</body>
+<script>
+
+</script>
+
+</html>
