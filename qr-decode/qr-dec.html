@@ -42,10 +42,41 @@
 
 
     <style>
+        body{
+            background-color: rgb(162, 174, 185);
+        }
+        #qrimage{
+            padding: 5px;
+            border: 1px solid pink;
+            cursor: pointer;
+            font-family: monospace;
+            color: rgb(58, 58, 58);
+        }
+        #qrimage:hover{
+            border: 1px solid black;
+        }
+        #qrimage:active{
+            border: 1px solid rgb(137, 240, 41);
+        }
+        #decode{
+            padding: 6px;
+            color: white;
+            background-color: rgb(39, 177, 51);
+            font-weight: 700;
+            border-radius: 5px;
+            border:1px solid rgba(255, 255, 255, 0);
+            cursor: pointer;
+            font-family:monospace;
+        }
+        #decode:hover{
+            background-color: rgb(48, 202, 61);
+        }
         .output {
             display: inline-block;
             padding: 20px;
-            background-color: lightgray;
+            background-color: rgba(211, 211, 211, 0);
+            font-size: medium;
+            font-family: monospace;
         }
     </style>
 </head>
@@ -53,6 +84,8 @@
 <body>
     <input type="file" id="qrimage" accept="image/png, image/jpeg">
     <button id="decode">Decode QR Code</button>
+    <br/>
+    <br/>
     <div class="output" id="output"></div>
 </body>
 <script>
