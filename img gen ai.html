@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AI Image Gen</title>
+</head>
+<body>
+    <h4>Image Description</h4>
+    <input id="imgdes" type="text" />
+    <!-- <input id="imgnum" type="number" />
+    <input id="imgheight" type="text" />
+    <input id="imgwidth" type="text" /> -->
+    <script>
+        const configuration = {
+  apiKey: "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",
+};
+
+const openai = new OpenAIApi(configuration);
+
+openai.createImage(
+  {
+    prompt: "A cute baby sea otter",
+    n: 2,
+    size: "1024x1024",
+  },
+  (err, response) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(response);
+    }
+  }
+);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/openai"></script>
+</body>
+</html>
