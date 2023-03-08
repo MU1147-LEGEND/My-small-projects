@@ -64,3 +64,5 @@ if response.status_code == 200:
     print("Message Report:", response.text)
 else:
     print("Message Report:", response.text)
+
+#install all modules by pip install -r requirements.txt
