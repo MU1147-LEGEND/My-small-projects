@@ -1,0 +1,11 @@
+const arr = [5,4,3,2,1];
+const sum = (array)=>{
+  total = 0;
+  for(i in array){
+    total+=array[i];
+  }
+  console.log(`the sum of the array: ${total}`);
+}
+
+sum(arr);
+sum([4,5,6,7]);
